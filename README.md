@@ -51,3 +51,15 @@ tokenMap.put("fghijk", "your_custom_event");
 
 AdjustWrapper.initialize(context, tokenMap);
 ```
+
+### Supported Methods
+
+The following API methods and properties are supported in the AppsFlyer wrapper.
+Use the wrapper by replacing `Adjust` in these instances with `AdjustWrapper`:
+
+*   `Adjust.trackEvent(AdjustEvent)` ->
+    `AdjustWrapper.trackEvent(WrappedAdjustEvent)`
+
+Replace `AdjustEvent` with `WrappedAdjustEvent` in these instances:
+
+*   `new AdjustEvent(token)` -> `new WrappedAdjustEvent(token)`
